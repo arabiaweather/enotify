@@ -1,0 +1,37 @@
+<div style="width:600px;direction:rtl;color:#fff;font-family:Tahoma,Arial,sans-serif">
+
+	<div style="width:100%;min-height:70px;background:#17699e;float:right">
+    	<a href="http://www.arabiaweather.com" target="_blank" style="float:right;color:#fff;margin:12px 5px 0 0;width:220px">
+        	<img src="https://ci6.googleusercontent.com/proxy/xjwZEveaLcvl48rHO8WBlidx1Ss5uKPW9phPeQme2esRlZsQC0kljKkiC97tTZo-AmO6whiyeKM58QXv6fjuBpjNAo-UVYxNVpmrOU7C7w=s0-d-e1-ft#http://st.wthr.ws/sites/all/themes/arabiaweather/logo.png" alt="Home">
+            <div style="font-size:12px;font-weight:bold;float:right;margin-right:39px;margin-top:-2px;clear:right;">طقس العرب </div>
+        </a>
+        <div style="font-size:21px;padding-right:12px;border-right:1px solid #fff;float:right;margin-top:20px;width:270px;"> طقس <%- @result.location %> </div>
+        <div style="font-size:11px;letter-spacing:1px;float:right;margin-top:18px;"><%- @result.d %></div>
+        <div style="font-size:11px;letter-spacing:1px;float:right;margin-top:4px;"><%- @result.dh %></div>
+    </div>
+    <div style="float:right;width:50%;min-height:224px;color:#2b2b2b">
+    	<div style="font-size:17px;font-weight:bold;float:right;margin:7px 8px 0 0;">نهاراً</div>
+        <img src="https://ci3.googleusercontent.com/proxy/RBEP11jnp-FEukY8ZWZSO2YsHI7IqYarmK-ONxVwXU0jCKKfM-qvQ21ZzG3m672kloxgUBrw-EA9nBhhg74vRnuFR_r4jmWRV7YHFseiO2I38jr5PHQOlunbKjoQ=s0-d-e1-ft#http://sitewidgets.arabiaweather.com/assets/icons/weather/198x144/<%- @result.day.s %>.png" style="float:right;margin:10px -30px 0 0;" width="198" height="144">
+        <div style="font-size:52px;width:80px;text-align:center;color:#ff880d;float:right;margin:49px -20px 0 0;"><%- @result.day.t %>°</div>
+        <div style="font-size:10px;line-height:26px;float: right;
+margin-right: 10px;"><div style="background:url(https://ci6.googleusercontent.com/proxy/OxIXc5GxDaM2tR9K96cutKHSb0a6bOXx6UhoUAVDny8fhJXs_mw1Eeu1ViVNYL7IgQbJXrPyAHDfJKelZli9ShiCz3YWlU6n7aDtX192ShDExMCZDoL4VFvU2Xim=s0-d-e1-ft#http://sitewidgets.arabiaweather.com/assets/icons/weather/hp-sprite.png);min-height:26px;width:26px;float:right"></div>الملموسة | <span dir="rtl" style="font-size:14px"><%- @result.day.tf %>°</span></div>
+        <div style="font-size:10px;line-height:26px;float:right;margin-right:30px;"><div style="background:url(https://ci6.googleusercontent.com/proxy/OxIXc5GxDaM2tR9K96cutKHSb0a6bOXx6UhoUAVDny8fhJXs_mw1Eeu1ViVNYL7IgQbJXrPyAHDfJKelZli9ShiCz3YWlU6n7aDtX192ShDExMCZDoL4VFvU2Xim=s0-d-e1-ft#http://sitewidgets.arabiaweather.com/assets/icons/weather/hp-sprite.png) 0 -52px;min-height:26px;width:26px;float:right"></div><div style="float:right;">الرياح | </div><div style="width:80px;margin-right:5px;float:right;"><%- @result.day.wn %></div><div style="width:80px;margin:-8px 59px 0 0;float:right;clear:right;"><%- @result.day.ws %> كم/س</div></div>
+         <div style="font-size:10px;line-height:26px;float: right;margin-right: 100px;"><div style="background:url(https://ci6.googleusercontent.com/proxy/OxIXc5GxDaM2tR9K96cutKHSb0a6bOXx6UhoUAVDny8fhJXs_mw1Eeu1ViVNYL7IgQbJXrPyAHDfJKelZli9ShiCz3YWlU6n7aDtX192ShDExMCZDoL4VFvU2Xim=s0-d-e1-ft#http://sitewidgets.arabiaweather.com/assets/icons/weather/hp-sprite.png) 0 -26px;min-height:26px;width:26px;float:right"></div>الرطوبة | <span dir="rtl" style="font-size:14px"><%- @result.day.rh %>%</span></div>
+</div>
+    <div style="float:right;width:50%;min-height:224px;background:#f4f4f4;color:#2b2b2b">
+    	<div style="font-size:17px;font-weight:bold;float:right;margin:7px 8px 0 0;">ليلاً</div>
+        <img src="https://ci3.googleusercontent.com/proxy/RBEP11jnp-FEukY8ZWZSO2YsHI7IqYarmK-ONxVwXU0jCKKfM-qvQ21ZzG3m672kloxgUBrw-EA9nBhhg74vRnuFR_r4jmWRV7YHFseiO2I38jr5PHQOlunbKjoQ=s0-d-e1-ft#http://sitewidgets.arabiaweather.com/assets/icons/weather/198x144/<%- @result.night.s %>.png" style="float:right;margin:10px -30px 0 0;" width="198" height="144">
+        <div style="font-size:52px;width:80px;text-align:center;float:right;margin:49px -20px 0 0;"><%- @result.night.t %>°</div>
+        <div style="font-size:10px;line-height:26px;float: right;
+margin-right: 10px;"><div style="background:url(https://ci6.googleusercontent.com/proxy/OxIXc5GxDaM2tR9K96cutKHSb0a6bOXx6UhoUAVDny8fhJXs_mw1Eeu1ViVNYL7IgQbJXrPyAHDfJKelZli9ShiCz3YWlU6n7aDtX192ShDExMCZDoL4VFvU2Xim=s0-d-e1-ft#http://sitewidgets.arabiaweather.com/assets/icons/weather/hp-sprite.png);min-height:26px;width:26px;float:right"></div>الملموسة | <span dir="rtl" style="font-size:14px"><%- @result.night.tf %>°</span></div>
+
+         <div style="font-size:10px;line-height:26px;float:right;margin-right:30px;"><div style="background:url(https://ci6.googleusercontent.com/proxy/OxIXc5GxDaM2tR9K96cutKHSb0a6bOXx6UhoUAVDny8fhJXs_mw1Eeu1ViVNYL7IgQbJXrPyAHDfJKelZli9ShiCz3YWlU6n7aDtX192ShDExMCZDoL4VFvU2Xim=s0-d-e1-ft#http://sitewidgets.arabiaweather.com/assets/icons/weather/hp-sprite.png) 0 -52px;min-height:26px;width:26px;float:right"></div><div style="float:right;">الرياح | </div><div style="width:80px;margin-right:5px;float:right;"><%- @result.night.wn %></div><div style="width:80px;margin:-8px 59px 0 0;float:right;clear:right;"><%- @result.night.ws %> كم/س</div></div>
+        <div style="font-size:10px;line-height:26px;float: right;margin-right: 100px;"><div style="background:url(https://ci6.googleusercontent.com/proxy/OxIXc5GxDaM2tR9K96cutKHSb0a6bOXx6UhoUAVDny8fhJXs_mw1Eeu1ViVNYL7IgQbJXrPyAHDfJKelZli9ShiCz3YWlU6n7aDtX192ShDExMCZDoL4VFvU2Xim=s0-d-e1-ft#http://sitewidgets.arabiaweather.com/assets/icons/weather/hp-sprite.png) 0 -26px;min-height:26px;width:26px;float:right"></div>الرطوبة | <span dir="rtl" style="font-size:14px"><%- @result.night.rh %>%</span></div>
+        </div>
+	<div style="float:right;width:100%;min-height:29px;background:#17699e;line-height:29px;font-size:12px">
+    	<div style="float:right;margin-right:10px">جميع الحقوق محفوظة ©2014 لـِ ArabiaWeather, Inc
+</div>
+        <a href="{unreglink}" style="float:left;margin-left:10px;color:#fff;text-decoration:none">لإلغاء إشتراكك بالنشرة البريدية إضغط هنا</a>
+    </div>
+</div>
+    
