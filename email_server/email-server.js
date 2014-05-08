@@ -5,7 +5,7 @@ client = redis.createClient();
 var program = require('commander');
 var crypto = require('crypto');
 var ECT = require('ect');
-var ectRenderer = ECT({ watch: true, root: __dirname + '/views',cache:false });
+var ectRenderer = ECT({ watch: true, root: __dirname + '/views' });
 app.engine('.ect', ectRenderer.render);
 program.option('-p, --port <n>', 'Port to run server on', parseInt).parse(process.argv);
 if(!program.port)
